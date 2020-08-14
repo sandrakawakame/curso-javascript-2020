@@ -30,4 +30,4 @@ console.log(notasBaixas3)
 console.log("Atribuindo a função em uma constante para usar em outros locais")
 const notasMenorQue7 = nota => nota < 7
 const notasBaixas4 = notas.filter(notasMenorQue7)
-console.log(notasBaixas4)
+console.log(notasBaixas4) 

@@ -1,6 +1,6 @@
 // cuidado ao usar o this dentro de uma função comum porque está mexendo no escopo global
 console.log("Função normal")
-let comparaComThis = function(param){
+let comparaComThis = function (param) {
     console.log(this === param)
 }
 comparaComThis(global)

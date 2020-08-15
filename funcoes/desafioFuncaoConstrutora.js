@@ -1,19 +1,22 @@
-class Desafio{
-    constructor (desafio){
+class Desafio {
+    constructor(desafio) {
         this.desafio = desafio;
     }
-    executar(){
+    executar() {
         console.log(`O desafio executado é ${this.desafio}`)
     }
 }
-const des1 = new Desafio('Criar classe')
-des1.executar()
+const des = new Desafio('Criar classe')
+des.executar()
 
 
-const desafio2 = desafio => {
-    return{
-        executar : ()=> console.log(`Desafio é: ${desafio}`)
+//função construtora
+function Desafio1(desafio) {
+    this.desafio = desafio;
+
+    this.executar = function () {
+        console.log(`O desafio executado é ${this.desafio}`)
     }
 }
-const n2 = desafio2('Criando uma função construtora')
-n2.executar()
+const des1 = new Desafio1('Criar classe construtora')
+des1.executar()
